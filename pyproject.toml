@@ -1,0 +1,22 @@
+[project]
+name = "Fast API Hello World"
+version = "1.0.0"
+description = "Learning about Docker"
+authors = [
+    {name = "Caroline Mimeault", email = "carolinemimeault@gmail.com"},
+]
+dependencies = [
+    "fastapi[all]>=0.89.1",
+]
+requires-python = ">=3.11.1"
+license = {text = "MIT"}
+
+[build-system]
+requires = ["pdm-pep517>=1.0.0"]
+build-backend = "pdm.pep517.api"
+
+[tool.pdm]
+
+[tool.pdm.scripts]
+start = "uvicorn main:app --reload"
+
