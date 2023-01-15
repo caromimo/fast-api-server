@@ -4,3 +4,5 @@ __pypackages__
 .pdm.toml
 
 **/*.env
+
+.vscode
